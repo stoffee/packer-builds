@@ -1,7 +1,7 @@
 {
   "min_packer_version": "1.0.4",
   "variables": {
-    "project_id": "SET_TO_YOUR_PID",
+    "project_id": "{{env `GOOGLE_PROJECT`}}",
     "zone": "us-west1-c",
     "vault_version": "0.11.5",
     "consul_module_version": "v0.3.1",
