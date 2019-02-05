@@ -1,7 +1,7 @@
-# #certs
-*pem
+#certs
+*.pem
 
-# # OS X files
+# OS X files
 .history
 .DS_Store
 
