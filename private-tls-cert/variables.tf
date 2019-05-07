@@ -5,17 +5,17 @@
 
 variable "ca_public_key_file_path" {
   description = "Write the PEM-encoded CA certificate public key to this path (e.g. /etc/tls/ca.crt.pem)."
-  default = "../gcp/vault-consul-nomad-cat-image/tls/ca.crt.pem"
+  default = "../azure/tls/ca.crt.pem"
 }
 
 variable "public_key_file_path" {
   description = "Write the PEM-encoded certificate public key to this path (e.g. /etc/tls/vault.crt.pem)."
-  default = "../gcp/vault-consul-nomad-cat-image/tls/vault.crt.pem"
+  default = "../azure/tls/vault.crt.pem"
 }
 
 variable "private_key_file_path" {
   description = "Write the PEM-encoded certificate private key to this path (e.g. /etc/tls/vault.key.pem)."
-  default = "../gcp/vault-consul-nomad-cat-image/tls/vault.key.pem"
+  default = "../azure/tls/vault.key.pem"
 }
 
 variable "owner" {
@@ -25,17 +25,17 @@ variable "owner" {
 
 variable "organization_name" {
   description = "The name of the organization to associate with the certificates (e.g. Acme Co)."
-  default = "roadkill.org"
+  default = "stoffee.com"
 }
 
 variable "ca_common_name" {
   description = "The common name to use in the subject of the CA certificate (e.g. acme.co cert)."
-  default = "roadkill.org"
+  default = "stoffee.com"
 }
 
 variable "common_name" {
   description = "The common name to use in the subject of the certificate (e.g. acme.co cert)."
-  default = "roadkill.org"
+  default = "stoffee.com"
 }
 
 variable "dns_names" {

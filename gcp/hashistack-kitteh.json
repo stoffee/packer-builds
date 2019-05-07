@@ -66,6 +66,13 @@
   },{
     "type": "shell",
     "inline": [
+      "git clone https://github.com/stoffee/terraform-google-nomad.git /tmp/terraform-google-nomad",
+      "/tmp/terraform-google-nomad/modules/install-nomad/install-nomad --version 0.8.7",
+      "sudo apt install -y docker.io"
+    ]
+  },{
+    "type": "shell",
+    "inline": [
       "git clone https://github.com/stoffee/terraform-google-consul.git /tmp/terraform-google-consul",
       "/tmp/terraform-google-consul/modules/install-consul/install-consul --version {{user `consul_version`}}",
       "/tmp/terraform-google-consul/modules/install-dnsmasq/install-dnsmasq"
